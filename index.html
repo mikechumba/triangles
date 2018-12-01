@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' type='image/x-icon' href='images/logo.png'>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Know your Triangles</title>
 </head>
 <body>
-    <img class="logo" src="images/logo.jpg" alt="logo">
-    <div class='fields'>
-        <p>Enter the length values of your triangle below.</p>
-        <div class="input">
-            <input type="number" placeholder="Length of side 1" id="sideA" required> 
+    <div class="container">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <div class='fields'>
+            <p>Enter the length values of your triangle below.</p>
+            <div class="input">
+                <input type="number" placeholder="Length of side 1" id="sideA" required> 
+            </div>
+            <div class="input">
+                <input type="number" placeholder="Length of side 2" id="sideB" required> 
+            </div>
+            <div class="input">
+                <input type="number" placeholder="Length of side 3" id="sideC" required> 
+            </div>
+            <input class="btn" type="button" value="Let's Go" onclick="triangleType()"> 
         </div>
-        <div class="input">
-            <input type="number" placeholder="Length of side 2" id="sideB" required> 
+        <div class="result">
+            <p id="results"></p>
         </div>
-        <div class="input">
-            <input type="number" placeholder="Length of side 3" id="sideC" required> 
         </div>
-        <a class="btn" href="">Let's Go</a>
-        <a class="btn" href="">Retry</a>  
-    </div>
-    <div class="result">
-        <p id="results"></p>
-    </div>
 </body>
 </html>
