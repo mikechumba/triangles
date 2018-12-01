@@ -24,6 +24,11 @@ body {
    padding: 0;
 }
 
+#page {
+   background-color: #F8FAFC;
+   overflow: hidden;
+}
+
 .container {
    height: 100%;
    width: 100%
@@ -33,12 +38,19 @@ body {
    width: 30px;
    display: block;
    margin: 15px 10px;
-   padding: 15px;
+   padding: 16px 15px;
 }
 
 .fields {
    padding: 0 15px;
    margin: 0 10px;
+   position: relative; 
+   top: 15%;
+}
+
+.fields p {
+   font-size: 14px;
+   fon
 }
 
 .input {
@@ -48,14 +60,24 @@ body {
 
 .input input {
    height: 30px;
+   width: 20%;
+   background-color: #F8FAFC;
+   border: 2px solid #38C172;
+   border-radius: 2px;
+   padding: 5px 15px;
+   color: 
 }
 
 .btn {
-   padding: 6px 12px;
-   border: 2px solid #1F9D55;
+   padding: 8px 15px;
+   border: 2px solid #38C172;
    text-decoration: none;
    background-color: transparent;
    margin: 15px 0;
+   font-size: 13px;
+   border-radius: 2px;
+   color: #38C172;
+   font-weight: 600;
 }
 
 .btn:hover {
@@ -67,6 +89,12 @@ body {
    font-weight: 500;
 }
 
+.btn:active {
+   z-index: -5;
+   background-color: #51D88A;
+   border: 2px solid #51D88A;
+   box-shadow: -1px -2px 5px 2px #A2F5BF;
+}
 
 
 
