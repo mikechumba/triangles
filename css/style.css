@@ -1,5 +1,11 @@
 @font-face {
-   
+   font-family: Lato;
+   src: url(fonts/Lato-Regular.ttf)
+}
+
+@font-face {
+   font-family: Lato;
+   src: url(fonts/Lato-Regular.ttf)
 }
 
 html, body {
@@ -8,9 +14,54 @@ html, body {
 }
 
 body {
+   font-family: Lato, sans-serif;
    margin: 0;
    padding: 0;
 }
+
+.container {
+   height: 100%;
+   width: 100%
+}
+
+.logo {
+   width: 30px;
+   display: block;
+   margin: 15px 10px;
+   padding: 15px;
+}
+
+.fields {
+   padding: 0 15px;
+   margin: 0 10px;
+}
+
+.input {
+   border: none;
+   margin: 10px 0;
+}
+
+.input input {
+   height: 30px;
+}
+
+.btn {
+   padding: 6px 12px;
+   border: 2px solid #1F9D55;
+   text-decoration: none;
+   background-color: transparent;
+   margin: 15px 0;
+}
+
+.btn:hover {
+   background-color: #38C172;
+   z-index: 5;
+   box-shadow: 1px 2px 5px 2px #A2F5BF;
+   border: 2px solid #38C172;
+   color: #F8FAFC;
+   font-weight: 500;
+}
+
 
 
 
