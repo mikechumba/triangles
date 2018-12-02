@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
    font-family: 'Lato';
    src: url(fonts/Lato-Regular.ttf)
 }
@@ -11,7 +11,7 @@
 @font-face {
    font-family: 'Roboto';
    src: url(fonts/Roboto-Regular.ttf)
-}
+} */
 
 html, body {
    width: 100%;
@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-   font-family: 'Open Sans', Roboto, Lato;
+   font-family: 'Open Sans', 'Roboto', 'Lato';
    margin: 0;
    padding: 0;
 }
@@ -35,10 +35,19 @@ body {
 }
 
 .logo {
-   width: 30px;
-   display: block;
    margin: 15px 10px;
    padding: 16px 15px;
+   position: relative;
+}
+
+.logo img {
+   width: 30px;
+   display: block;
+}
+
+.logo p {
+   font-size: 13px;
+   font-weight: 700;
 }
 
 .fields {
@@ -56,6 +65,14 @@ body {
    font-size: 16px;
    font-weight: 600;
    color: #3D4852;
+}
+
+.fields .description {
+   font-family: 'Roboto', 'Lato', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   color: #8795A1;
+   font-style: italic;
 }
 
 .input {
@@ -103,7 +120,7 @@ body {
 
 .result {
    padding: 0 15px;
-   margin: 0 2%;
+   margin: 0 5%;
    float: right;
    width: 40%;
 }
