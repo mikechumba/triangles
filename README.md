@@ -2,7 +2,35 @@
 
 ##### Authored by Michael Kipchumba
 
-## License 
+
+
+### About Project
+
+Triangle Tracker is a web app that seeks to tell the type of triangle based on the length of the dimensions that a user enters. It tests for three types of triangles, equilateral, isosceles or scalene, based on length of its sides.
+
+[Link to Live Site](https://mikechumba.github.io/triangles)
+
+### Project Tools
+
+##### Languages
+
+- HTML5
+- CSS3
+- Javascript
+
+###### Other
+
+- Fonts (Roboto, Open Sans, Lato) from [Google Fonts](fonts.google.com).
+
+### Debugging
+
+The web app doesn't seem to have any bugs this far. If you happen to come across one, I will be happy to have a look at it. Contact Me on:
+
+- [Facebook](https://web.facebook.com/ItsMikeChumba/)
+- [Email](michaelchumba09@gmail.com)
+
+
+### License 
 
 MIT License
 
