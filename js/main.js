@@ -1,60 +1,69 @@
 
-let dimensions = {
-	x: document.getElementById('sideA').value,
-	y: document.getElementById('sideA').value,
-	z: document.getElementById('sideA').value
-};
-
-let sides = [];
-
-sides.push(dimensions.x, dimensions.y, dimensions.z);
-
-function checkProperty(propName) {
-	return !isNaN(propName)
-}
-
-let isNumber = sides.every(checkProperty);
-
-let a, b, c;
-
-a = parseInt(sides[0]);
-b = parseInt(sides[1]);
-c = parseInt(sides[2]);
-
-var checkCondition = [];
-
-checkCondition.push(((a + b) > c), ((b + c) > a), ((c + a) > b));
-
-function checkTriangle(element) {
-	return element;
-}
-
-let isTriangle = checkCondition.every(checkTriangle)
-/* let isTriangle = checkCondition.every(); */
-
-/* alert(isTriangle); */
-
-
-
 function triangleType() {
-	let answer;
 	
-	if (!(isNumber)) {
-		answer = 'Please enter only valid number values!';
-	} else {
-		if (isTriangle && (a === b && b === c)) {
-			answer = 'It is an Equilateral Triangle';
-		} else if (isTriangle && (a == b || b == c || c == a)) {
-			answer = 'It is an Isosceles Triangle';
-		} else if (isTriangle) {
-			answer = 'It is a Scalene Triangle';
+	let x, y, z;
+
+	x = parseInt(document.getElementById("sideA").value);
+	y = parseInt(document.getElementById("sideB").value);
+	z = parseInt(document.getElementById("sideC").value);
+
+
+	var sides = [];
+
+	sides.push(x, y, z);
+
+	function checkProperty(propName) {
+		return !isNaN(propName)
+	}
+
+	var isNumber = sides.every(checkProperty);
+
+	let a, b, c;
+
+	a = x;
+	b = y;
+	c = z;
+
+	var isTriangle = ((a + c > b) && (a + b > c) && (b + c > a) );
+	
+	
+	let answer, invalidInput, smiley;
+	
+
+
+	if ((isNumber)) {
+		if (isTriangle) {
+			smiley = ": )"
+			if ((a === b) && (b === c) && (c === a)) {
+				answer = "That will make an Equilateral Triangle, <br> because all sides are equal."
+			} else if (a == b || a == c || b == c){
+				answer = "That will make an Isosceles Triangle, <br>  because two sides are equal."
+			} else {
+				answer = "That is a Scalene Triangle. <br> No sides are equal."
+			}
 		} else {
-			answer = 'That is in no way a Triangle';
+			smiley = ": ("
+			answer = "Too bad! Those dimensions won't make any kind of triangle."
 		}
+	} else {
+		invalidInput = "Sorry! Enter only valid numbers."
 	}
 	
-	return answer;
+	// return answer;
+
+	if (!(isNumber)) {
+		document.getElementById("invalid").innerHTML = invalidInput;
+	} else {
+		document.getElementById("results").innerHTML = answer;
+		document.getElementById("smiley").innerHTML = smiley;
+	}
+} 
+
+function displayResults() {
+	document.getElementById("results").innerHTML = triangleType();
 }
 
-alert(triangleType());
 
+function resetFields() {
+	location.reload();
+}
