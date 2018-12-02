@@ -10,6 +10,21 @@ Triangle Tracker is a web app that seeks to tell the type of triangle based on t
 
 [Link to Live Site](https://mikechumba.github.io/triangles)
 
+![alt text](http://url/to/img.png)
+
+##### Project Approach
+
+The aim of the project came down to the following:
+
+- Take 3 values from the user and test them against set conditions then return the result.
+- The values taken would have to be numerical and positive.
+- The results should be displayed to the user.
+- There would have option to reset the input fields to allow the user to enter new data, if they want to.
+
+The web app manages to achieve most of this. Below is a flowchart that summarizes how the app works:
+
+![alt text](images/flowchart.png)
+
 ### Project Tools
 
 ##### Languages
