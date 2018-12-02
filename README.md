@@ -12,7 +12,13 @@ Triangle Tracker is a web app that seeks to tell the type of triangle based on t
 
 ![alt text](images/homepage.png)
 
-##### Project Approach
+*The image of the homepage before the user enters and runs the data.*
+
+![alt text](images/result.png)
+
+*A result of the user's entry is displayed on the side.*
+
+#### Project Approach
 
 The aim of the project came down to the following:
 
@@ -24,6 +30,21 @@ The aim of the project came down to the following:
 The web app manages to achieve most of this. Below is a flowchart that summarizes how the app works:
 
 ![image](images/flowchart.png)
+
+### Setting Things Up
+
+If you want to use the project as your own, feel free to do so following the steps below:
+
+- You can chose to fork this repository by clicking the fork button on the top of this page. Thereafter you can clone it from your own github page or;
+
+![image](images/fork.png)
+
+- You can clone directly from my page using following these steps using your terminal: 
+   
+   - `cd <your-chosen-directory>`
+   - `git clone https://github.com/mikechumba/triangles`
+   - There you go. You can now edit the project on your own. Good Luck!
+
 
 ### Project Tools
 
