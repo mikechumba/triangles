@@ -69,10 +69,9 @@ body {
    height: 30px;
    width: 54%;
    background-color: #F8FAFC;
-   border: 2px solid #38C172;
+   border: 2px solid #51D88A;
    border-radius: 2px;
    padding: 5px 15px;
-   color: 
 }
 
 .btn {
@@ -87,13 +86,41 @@ body {
    font-weight: 600;
 }
 
+.reset-btn {
+   padding: 8px 15px;
+   border: 2px solid #8795A1;
+   text-decoration: none;
+   background-color: transparent;
+   margin: 15px 0;
+   font-size: 13px;
+   border-radius: 2px;
+   color: #606F7B;
+   font-weight: 600;
+}
+
+.reset-btn:hover {
+   background-color: #E3342F;
+   z-index: 5;
+   box-shadow: 1px 2px 5px 2px #EF5753;
+   border: 2px solid #E3342F;
+   color: #F8FAFC;
+   font-weight: 600;
+}
+
+.reset-btn:active {
+   z-index: -5;
+   background-color: #E3342F;
+   border: 2px solid #E3342F;
+   box-shadow: -1px -2px 5px 2px #EF5753;
+}
+
 .btn:hover {
    background-color: #38C172;
    z-index: 5;
    box-shadow: 1px 2px 5px 2px #A2F5BF;
    border: 2px solid #38C172;
    color: #F8FAFC;
-   font-weight: 500;
+   font-weight: 600;
 }
 
 .btn:active {
