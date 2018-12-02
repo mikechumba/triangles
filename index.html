@@ -6,28 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='shortcut icon' type='image/x-icon' href='images/logo.png'>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js" ></script>
     <title>Know your Triangles</title>
 </head>
 <body>
     <div class="container" id="page">
-        <img class="logo" src="images/logo.png" alt="logo">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+            <!-- <p>TRIANGLE TRACKER</p> -->
+        </div>
         <div class='fields'>
-            <p>Enter the length values of your triangle below.</p>
+            <p>Enter the dimensions of your triangle below:</p>
             <div class="input">
-                <input type="number" placeholder="Enter length of the 1st side" id="sideA" required> 
+                <input type="text" placeholder="Enter length of the 1st side" id="sideA" required> 
             </div>
             <div class="input">
-                <input type="number" placeholder="Enter length of the 2nd side" id="sideB" required> 
+                <input type="text" placeholder="Enter length of the 2nd side" id="sideB" required> 
             </div>
             <div class="input">
-                <input type="number" placeholder="Enter length of the 3rd side" id="sideC" required> 
+                <input type="text" placeholder="Enter length of the 3rd side" id="sideC" required> 
             </div>
+            <p id="invalid"></p>
             <input class="btn" type="button" value="Let's Go" onclick="triangleType()">
+            <input class="btn" type="reset" value="Reset" onclick="resetFields()">
             <p class='description'>This app tries to tell the type of triangle based <br> on the dimensions you enter in the fields above</p> 
         </div>
         <div class="result">
-            <p id="smiley">: (</p>
-            <p id="results">That is in no way a triangle!</p>
+            <p id="smiley" class="smiley"></p>
+            <p id="results" class="results"></p>
         </div>
         </div>
 </body>
